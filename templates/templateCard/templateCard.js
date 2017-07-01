@@ -2,7 +2,9 @@ import { CARD_BINDING, CARD_EVENTS } from 'app/components/main/common/components
 import './templateCard.scss';
 
 class TemplateCard {
-  constructor() {
+  constructor($scope) {
+    this.$scope = $scope;
+
     this.buttons = [{
       priority: 10,
       title: 'Сохранить',
@@ -12,10 +14,15 @@ class TemplateCard {
       title: 'Отмена',
       action: () => this.cancel(),
     }];
+    this.isDataChanged = false;
   }
 
   save() {
 
+  }
+
+  needShowLeaveDialog() {
+    return this.isDataChanged;
   }
 
   cancel() {
