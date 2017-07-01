@@ -7,5 +7,5 @@ if (!componentName) {
   return console.error('Не введено имя компонента, отмена...')
 }
 
-const creator = new TemplateCreator('templateCard', componentName);
+const creator = new TemplateCreator('templateComponent', componentName);
 creator.create();
