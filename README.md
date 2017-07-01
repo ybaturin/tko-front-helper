@@ -1,6 +1,10 @@
 # tko-front-helper
-Для создания компонента-карточки в нужной папке вызывать команду:__
-tko-card-create [camelCaseCardName]__
-__
-Для создания простого шаблона компонента вызывать:__
-tko-component-create [camelCaseComponentName]__
+Для создания компонента-карточки в нужной папке вызывать команду:<br>
+```bash
+tko-card-create [camelCaseCardName]<br>
+```
+<br>
+Для создания простого шаблона компонента вызывать:<br>
+```bash
+tko-component-create [camelCaseComponentName]<br>
+```
