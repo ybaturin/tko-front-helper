@@ -1,0 +1,25 @@
+{
+  "name": "tko-front-helper",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tko-create-card": "bin/create-card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ybaturin/tko-front-helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ybaturin/tko-front-helper/issues"
+  },
+  "homepage": "https://github.com/ybaturin/tko-front-helper#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
