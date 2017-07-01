@@ -5,4 +5,5 @@ const path = require('path');
 const componentName = process.argv[2];
 const TemplateCreator = require('../lib/template-creator.js');
 
-(new TemplateCreator).create(componentName);``
+const creator = new TemplateCreator('templateCard', componentName);
+creator.create();
