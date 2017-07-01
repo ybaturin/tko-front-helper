@@ -5,6 +5,7 @@ tko-card-create [camelCaseCardName]<br>
 ```
 <br>
 Для создания простого шаблона компонента вызывать:<br>
+
 ```bash
 tko-component-create [camelCaseComponentName]<br>
 ```
