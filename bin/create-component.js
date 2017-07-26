@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const componentName = process.argv[1];
+const componentName = process.argv[2];
 const TemplateCreator = require('../lib/template-creator.js');
 
 if (!componentName) {
