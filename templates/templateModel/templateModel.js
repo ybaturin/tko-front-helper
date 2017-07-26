@@ -4,4 +4,4 @@ export default class TemplateModel extends BaseModel {
 
 }
 
-AnalyticsMso.registerFactory('AnalyticsMso');
+TemplateModel.registerFactory('TemplateModel');
