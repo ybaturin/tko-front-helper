@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const modelName = process.argv[1];
+const modelName = process.argv[2];
 const ModelCreator = require('../lib/model-creator.js');
 
 if (!modelName) {
