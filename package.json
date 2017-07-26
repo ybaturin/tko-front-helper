@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "tko-card-model": "bin/create-model.js",
+    "tko-model-create": "bin/create-model.js",
     "tko-card-create": "bin/create-card.js",
     "tko-component-create": "bin/create-component.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ybaturin/tko-front-helper.git"
+    "url": "git+`"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ybaturin/tko-front-helper#readme",
   "dependencies": {
-    "app-root-path": "^2.0.1",
     "lodash": "^4.17.4",
     "ncp": "^2.0.0"
   }
