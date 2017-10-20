@@ -2,7 +2,12 @@ import { CARD_BINDING, CARD_EVENTS } from 'app/components/main/common/components
 import './templateCard.scss';
 
 class TemplateCard {
-  constructor($scope) {
+  buttons: any[] = [];
+  isDataChanged: boolean = false;
+
+  constructor(
+    private $scope: angular.IScope,
+  ) {
     this.$scope = $scope;
 
     this.buttons = [{
