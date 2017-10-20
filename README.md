@@ -16,3 +16,9 @@ tko-card-create [camelCaseCardName]
 ```bash
 tko-component-create [camelCaseComponentName]
 ```
+<br>
+Для создания простого модели вызвать (из любой папки внутри проекта):<br>
+
+```bash
+tko-model-create [camelCaseModelName]
+```
