@@ -1,6 +1,6 @@
-<card-block card-proxy-attrs="$ctrl"
-            loader="$ctrl.loader"
-            need-show-leave-dialog="$ctrl.needShowLeaveDialog()">
+<card-block card-proxy-attrs="$templateCard"
+            loader="$templateCard.loader"
+            need-show-leave-dialog="$templateCard.needShowLeaveDialog()">
 
   <div class="template-card box flex-column">
     <div class="template-card__header">
@@ -12,7 +12,7 @@
 
     <div class="btns__panel">
       <buttons-panel ng-if="true"
-                     buttons="$ctrl.buttons"
+                     buttons="$templateCard.buttons"
                      max-main-buttons="3">
       </buttons-panel>
     </div>

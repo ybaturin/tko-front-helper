@@ -41,4 +41,6 @@ angular.module('tko.main').component('templateCard', {
   },
   template: require('./templateCard.html'),
   controller: TemplateCard,
+  /** @property { TemplateCard } $templateCard */
+  controllerAs: '$templateCard'
 });

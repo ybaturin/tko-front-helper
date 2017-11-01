@@ -20,4 +20,6 @@ angular.module('tko.main').component('templateComponent', {
   },
   template: require('./templateComponent.html'),
   controller: TemplateComponent,
+  /** @property { TemplateComponent } $templateComponent */
+  controllerAs: '$templateComponent'
 });
