@@ -1,8 +1,9 @@
 import { CARD_BINDING, CARD_EVENTS } from 'app/components/main/common/components/cardBlock/cardBlock';
+import { ButtonsPanelItem } from 'app/components/main/contracts/consumers/components/buttonsPanel/buttonsPanel';
 import './templateCard.scss';
 
 class TemplateCard {
-  buttons: any[] = [];
+  buttons: ButtonsPanelItem[];
   isDataChanged: boolean = false;
 
   constructor(
@@ -42,5 +43,5 @@ angular.module('tko.main').component('templateCard', {
   template: require('./templateCard.html'),
   controller: TemplateCard,
   /** @property { TemplateCard } $templateCard */
-  controllerAs: '$templateCard'
+  controllerAs: '$templateCard',
 });
