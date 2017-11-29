@@ -1,15 +1,16 @@
-import { CARD_BINDING, CARD_EVENTS } from 'app/components/main/common/components/cardBlock/cardBlock';
+import { CARD_BINDING } from 'app/components/main/common/components/cardBlock/cardBlock';
 import { ButtonsPanelItem } from 'app/components/main/contracts/consumers/components/buttonsPanel/buttonsPanel';
+import { CardMixin } from 'app/mixins/cardMixin';
+import { BaseObject } from 'app/core/base';
 import './templateCard.scss';
 
-class TemplateCard {
+class TemplateCard extends CardMixin(BaseObject){
   buttons: ButtonsPanelItem[];
-  isDataChanged: boolean = false;
 
   constructor(
     private $scope: angular.IScope,
   ) {
-    this.$scope = $scope;
+    super();
 
     this.buttons = [{
       priority: 10,
@@ -18,21 +19,8 @@ class TemplateCard {
     }, {
       priority: 9,
       title: 'Отмена',
-      action: () => this.cancel(),
+      action: () => this.closeCard(),
     }];
-    this.isDataChanged = false;
-  }
-
-  save() {
-
-  }
-
-  needShowLeaveDialog() {
-    return this.isDataChanged;
-  }
-
-  cancel() {
-    this.$scope.$broadcast(CARD_EVENTS.CLOSE_CARD);
   }
 }
 
