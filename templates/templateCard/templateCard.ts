@@ -8,7 +8,7 @@ class TemplateCard extends CardMixin(BaseObject){
   buttons: ButtonsPanelItem[];
 
   constructor(
-    private $scope: angular.IScope,
+    protected $scope: angular.IScope,
   ) {
     super();
 
@@ -21,6 +21,10 @@ class TemplateCard extends CardMixin(BaseObject){
       title: 'Отмена',
       action: () => this.closeCard(),
     }];
+  }
+
+  save() {
+
   }
 }
 
